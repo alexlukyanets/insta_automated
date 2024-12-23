@@ -1,4 +1,4 @@
-from asyncio import run
+from asyncio import Runner
 
 from core.scripts.leave_comments import leave_comments
 
@@ -8,4 +8,5 @@ async def main():
 
 
 if __name__ == '__main__':
-    run(main())
+    with Runner() as runner:
+        runner.run(main())
